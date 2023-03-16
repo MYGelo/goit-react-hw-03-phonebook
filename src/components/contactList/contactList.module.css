@@ -1,0 +1,27 @@
+.contact__list__btn {
+     
+
+     /* border-radius: 5px;
+     margin-left: 50px; */
+}
+.container {
+    
+}
+.contact__list{
+   padding: 0;
+   list-style: decimal;
+}
+.contact__list:nth-child(3n+1) {
+background-color: bisque;
+}
+
+.contact__list__text{
+    margin: 5px;
+}
+.contact__list__item{
+    width: 333px;
+    text-align: end;
+}
+.contact__list__item:nth-child(2n+1) {
+    background-color: gainsboro;
+    }
