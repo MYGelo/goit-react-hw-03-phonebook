@@ -17,13 +17,11 @@ export class App extends Component {
   }
 
   componentDidMount (prevProps ,prevState) {
-    console.log("componentDidMount");
+    
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
-    console.log(parsedContacts);
-    // this.setState(this.state: contacts = parsedContacts)
+    
     if (parsedContacts) {
-      console.log('достаю контакты из хранилища');
       this.setState(prevState = parsedContacts)
     }
   }
@@ -32,8 +30,6 @@ export class App extends Component {
 
     if (this.state !== prevState) {
       localStorage.setItem('contacts',JSON.stringify(this.state));
-      console.log("обновилось записная книга (contacts)");
-      
     }
   }
 
